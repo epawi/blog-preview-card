@@ -1,30 +1,68 @@
 <!DOCTYPE html>
+<!--Balise qui définit la langue du document-->
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!--Head du document, définit les métadonnées et ne sera pas affiché sur la page-->
+  <head>
+    <!--Elément qui détermine les caractères utilisés dans le document, ici le choix de l'UTF-8 permet d'être le plus universel possible-->
+    <meta charset="UTF-8" />
+    <!--Elément qui permet à la page de s'adapter automatiquement à la taille de la fenêtre de navigation-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Lien vers la feuille de style CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicône qui apparaît dans le navigateur de l'utilisateur.ice à côté du nom de l'onglet -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!--Balises et liens permettant d'utiliser la police d'écriture choisie-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Titre de la page-->
+    <title>Frontend Mentor | Blog preview card</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
+  <!--Corps du document, ce qui apparaîtra sur la page-->
+  <body>
+    <!--Partie principale, centrale du document-->
+    <main>
+      <!--Carte, élément principal de la page-->
+      <section class="carte">
+        <!--Encadré de la catégorie-->
+        <article class="categorie">Learning</article>
+        <!--Date en format-->
+        <p>Published 21 Dec 2023</p>
+        <!--Titre de niveau 1-->
+        <h1>HTML & CSS foundations</h1>
+        <!--Description de l'article, en format paragraphe-->
+        <p>
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+        <!--Section auteur avec photo et nom-->
+        <div class="auteur">
+          <img
+            class="pp-auteur"
+            src="./images/image-avatar.webp"
+            alt="Photo of the author"
+          />
+          <p>Greg Hooper</p>
+        </div>
+      </section>
+    </main>
 
-
-</head>
-<body>
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!--Pied de page-->
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >, coded by
+      <a href="https://www.linkedin.com/in/ninon-commarieu">Ninon Commarieu</a>.
+    </footer>
+  </body>
 </html>
