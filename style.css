@@ -6,14 +6,6 @@ The designs were created to the following widths:
 - Desktop: 1440px
 > testing the full range of screen sizes from 320px to large screens.
 
-### Body Copy
-
-- Font size (paragraph): 16px
-
-### Font
-
-- Weights: 500, 800
-**/
 
 /****** Propriétés CSS globales ***********/
 
@@ -65,6 +57,81 @@ main {
   box-shadow: 16px 16px 0px 0px #000;
 }
 
+/* Mise en page du contenu texte de la carte */
+.contenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  align-self: stretch;
+}
+
+/* Mise en page du nom de la catégorie */
+.categorie {
+  color: var(--Noir);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  background-color: var(--Jaune);
+  border-radius: 0.25rem;
+  display: flex;
+  padding: 0.25rem 0.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Mise en page de la date, le paragraphe arrivant immédiatement après la catégorie */
+.categorie + p {
+  color: var(--Noir);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+/* Mise en page du titre */
+h1 {
+  color: var(--Noir);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+/* Mise en forme du titre au survol */
+h1:hover {
+  color: var(--Jaune);
+  cursor: pointer;
+}
+
+/* Mise en page du résumé, le paragraphe arrivant immédiatement le titre */
+h1 + p {
+  color: var(--Gris);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+/* Mise en page de la section auteur */
+.auteur {
+  color: var(--Noir);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.pp-auteur {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+}
 
 /* Mise en forme du pied de page */
 footer {
