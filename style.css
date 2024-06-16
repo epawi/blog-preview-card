@@ -45,11 +45,19 @@ main {
   justify-content: center;
   flex-shrink: 0;
   padding: 1.5rem;
+  gap: 1.5rem;
   width: 24rem;
   background-color: var(--Blanc);
   border: 1px solid var(--Black, #111);
   border-radius: 1.25rem;
   box-shadow: 8px 8px 0 0 var(--Noir);
+}
+
+/* Mise en forme de l'image d'illustration */
+.illustration {
+  align-items: center;
+  align-self: stretch;
+  border-radius: 0.625rem;
 }
 
 /* Mise en forme de la carte au survol */
@@ -62,8 +70,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.75rem;
   align-self: stretch;
+  gap: 0.75rem;
 }
 
 /* Mise en page du nom de la catégorie */
@@ -98,6 +106,7 @@ h1 {
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
+  margin: 0;
 }
 
 /* Mise en forme du titre au survol */
