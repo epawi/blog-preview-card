@@ -1,12 +1,3 @@
-/**# Front-end Style Guide
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-> testing the full range of screen sizes from 320px to large screens.
-
-
 /****** Propriétés CSS globales ***********/
 
 /* Couleurs utilisées */
@@ -157,4 +148,24 @@ a {
 /* Couleur des liens au survol */
 a:hover {
   color: var(--Gris);
+}
+
+/****** Version mobile : résolution inférieure ou égale à 768px *********/
+
+@media screen and (max-width: 768px) {
+  /* Redimensionnement de la carte */
+  .carte {
+    width: 20rem;
+  }
+
+  /* Ajustement de la mise en forme du titre pour plus de lisibilité */
+  h1 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  /* Ajustement de la mise en forme du paragraphe pour plus de lisibilité */
+  h1 + p {
+    font-size: 0.875rem;
+  }
 }
