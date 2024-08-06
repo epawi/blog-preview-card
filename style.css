@@ -40,7 +40,7 @@ main {
   width: 20rem;
   background-color: var(--Blanc);
   border: 1px solid var(--Black, #111);
-  border-radius: 1rem;
+  border-radius: 1.25rem;
   box-shadow: 8px 8px 0 0 var(--Noir);
 }
 
@@ -62,13 +62,12 @@ main {
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
-  gap: 0.5rem;
 }
 
 /* Mise en page du nom de la catégorie */
 .categorie {
   color: var(--Noir);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
@@ -84,7 +83,7 @@ main {
 /* Mise en page de la date, le paragraphe arrivant immédiatement après la catégorie */
 .categorie + p {
   color: var(--Noir);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -93,7 +92,7 @@ main {
 /* Mise en page du titre */
 h1 {
   color: var(--Noir);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
@@ -109,7 +108,7 @@ h1:hover {
 /* Mise en page du résumé, le paragraphe arrivant immédiatement le titre */
 h1 + p {
   color: var(--Gris);
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -120,8 +119,8 @@ h1 + p {
   color: var(--Noir);
   display: flex;
   align-items: center;
-  gap: 0.7rem;
-  font-size: 0.75rem;
+  gap: 0.5rem;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
@@ -130,7 +129,7 @@ h1 + p {
 .pp-auteur {
   width: 1.5rem;
   height: 1.5rem;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
 }
 
 /* Mise en forme du pied de page */
@@ -160,12 +159,12 @@ a:hover {
 
   /* Ajustement de la mise en forme du titre pour plus de lisibilité */
   h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0;
   }
 
   /* Ajustement de la mise en forme du paragraphe pour plus de lisibilité */
   h1 + p {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
 }
