@@ -21,10 +21,6 @@ body {
   height: 100vh;
 }
 
-p {
-  margin: 0;
-}
-
 /* Mise en place de Flexbox dans Main pour contrôler l'emplacement du contenu */
 main {
   display: flex;
